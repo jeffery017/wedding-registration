@@ -1,4 +1,3 @@
-import backgroundImage from '../assets/flower-background.jpg'
 import flowerRing from '../assets/wreath-3384413_1280.png'
 
 type Props = {
