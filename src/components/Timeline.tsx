@@ -1,6 +1,6 @@
-import backgroundImage from '../assets/leaves-7910755_1280.png'
+// import backgroundImage from '../assets/leaves-7910755_1280.png'
 import flower1 from '../assets/watercolor-5729102_1280.png'
-import yellowFlower from '../assets/yellow-flowers-7746722_1280.png'
+// import yellowFlower from '../assets/yellow-flowers-7746722_1280.png'
 export default function Timeline() {
   return (
     <section className="grow relative min-w-56 shrink-0 overflow-hidden min-h-[90vh] flex items-center justify-center">
