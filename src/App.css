@@ -1,0 +1,48 @@
+html {
+  @apply bg-neutral-50
+}
+
+input[type="radio"] {
+  margin: 0.2em;
+}
+
+.form h1 {
+  @apply text-xl py-4 text-center;
+}
+
+.form label {
+  @apply font-light;
+}
+.form input[type='text'],
+.form input[type='number'],
+.form input[type='email'],
+.form textarea {
+  @apply grow border border-orange-900 border-opacity-30 rounded-md p-1.5 font-light bg-white bg-opacity-60 outline-none;
+}
+
+.sub_question_group {
+  @apply w-full p-4 bg-orange-800 bg-opacity-15 rounded-md flex flex-col gap-2;
+}
+
+.form textarea
+{
+  @apply w-full;
+}
+
+
+.h_group {
+  @apply w-full flex justify-start gap-3 items-center;
+}
+
+.label_group {
+  @apply w-full flex flex-col gap-1
+}
+.label_group > label,
+.h_group > label{
+  @apply ml-1 text-neutral-800
+}
+
+.imageShadow {
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+}
