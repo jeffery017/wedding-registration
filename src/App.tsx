@@ -15,8 +15,8 @@ function App() {
   const queryParams = new URLSearchParams(window.location.search)
   const group = queryParams.get("group") || ""
   const relationship = queryParams.get("r") || ""
-  const [isDialogShow, setIsDialogShow] = useState(true) 
-  const [isSubmitted, setIsSubmitted] =  useState(true)
+  const [isDialogShow, setIsDialogShow] = useState(false) 
+  const [isSubmitted, setIsSubmitted] =  useState(false)
   const [willAttend, setWillAttend] = useState(false)
 
   return (
