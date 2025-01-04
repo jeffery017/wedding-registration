@@ -10,7 +10,7 @@ export default function Header() {
       <div className='absolute w-full h-full bottom-0 bg-gradient-to-t from-orange-950 to-orange-950/0 opacity-60'></div>
       <div className="absolute w-full bottom-[15%] flex flex-col items-center justify-center ">
           {/* <h1 className='text-3xl  w-full '>以奇與濟芸的婚禮</h1> */}
-          <p className=' text-center text-white font-thin leading-loose'>
+          <p className=' text-center text-white font-light leading-loose'>
             我們要結婚了<br/>
             謝謝你們參與我們人生的不同階段<br/>
             為我們留下許多美好的回憶<br/>

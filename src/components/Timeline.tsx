@@ -13,7 +13,7 @@ export default function Timeline() {
       {/* card */}
       <div className='m-2 p-16 flex flex-col items-center justify-center gap-6 bg-white/60 rounded-md shadow-lg'>
         <div className='flex flex-col items-center z-20'>
-          <h1 className='text-2xl'>婚禮時程</h1>
+          <h1 className='text-2xl text-center tracking-wider font-light'>婚禮時程</h1>
           <p>2025.6.28</p>
         </div>
         <div className='text-2xl'>・</div>
