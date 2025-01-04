@@ -1,4 +1,5 @@
 import backgroundImage from '../assets/flower-background.jpg'
+import flowerRing from '../assets/wreath-3384413_1280.png'
 
 type Props = {
   isSubmitted: boolean
@@ -15,23 +16,26 @@ export default function SubmitDialog({
 
 
   return (
-    <div className="fixed w-full h-lvh bg-neutral-900 bg-opacity-60 top-0 flex items-center justify-center "> 
-      <div className="relative w-full max-w-[350px] m-2 aspect-square bg-white border-2 shadow-md rounded-full flex flex-col items-center justify-center gap-4 overflow-hidden font-light text-xl">
-        <img src={backgroundImage} alt="" className='absolute bottom-0 h-[200%] object-cover opacity-35 object-right' />
-        <div className="z-10">
-          {isSubmitted ? willAttend? <p>提交成功，謝謝您的報名！</p> :  <p>提交成功，謝謝您的留言！</p> : <p>提交表單中</p>}
+    <div className="fixed w-full h-lvh  top-0 flex items-center justify-center bg-gradient-to-t from-black/50 to-black/20 z-40"
+      onClick={() => setIsDialogShow(false)}
+    > 
+      <div className="relative w-full max-w-[350px] m-2 aspect-square bg-white border-2 border-red-300 shadow-md rounded-full flex flex-col items-center justify-center gap-4 font-light text-xl overflow-hidden text-center">
+      <img src={flowerRing} alt="" className='absolute h-[140%] object-cover opacity-30' />
+        {/* <img src={backgroundImage} alt="" className='absolute bottom-0 h-[200%] object-cover opacity-20 object-right' /> */}
+        <div className='z-10'>
+          {isSubmitted ? willAttend? <p>提交成功<br/>謝謝您的報名！</p> :  <p>提交成功<br/>謝謝您的留言！</p> : <p>提交表單中</p>}
 
         </div>
-        <div className='z-10 text-xl '>
+        <div className='z-10'>
           {isSubmitted && 
             <button 
-            className="w-64 m-auto bg-[hsl(12,75%,66%)] hover:bg-[hsl(12,85%,70%)] text-white py-2 rounded-md"
+            className="w-48  m-auto bg-[hsl(12,75%,66%)] hover:bg-[hsl(12,85%,70%)] text-white py-2 rounded-md"
             onClick={()=>setIsDialogShow(false)}
             >關閉</button> 
             
-            }
+          }
         </div>
-      </div>
+      </div> 
     </div>
   )
 }

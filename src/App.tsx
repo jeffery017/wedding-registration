@@ -15,8 +15,8 @@ function App() {
   const queryParams = new URLSearchParams(window.location.search)
   const group = queryParams.get("group") || ""
   const relationship = queryParams.get("r") || ""
-  const [isDialogShow, setIsDialogShow] = useState(false) 
-  const [isSubmitted, setIsSubmitted] =  useState(false)
+  const [isDialogShow, setIsDialogShow] = useState(true) 
+  const [isSubmitted, setIsSubmitted] =  useState(true)
   const [willAttend, setWillAttend] = useState(false)
 
   return (
@@ -25,13 +25,12 @@ function App() {
       <div className='relative overflow-hidden'>
         <div className='absolute bottom-0  bg-neutral-200 w-full h-full'></div>
         <img src={backgroundImage} alt="" className='absolute bottom-0 h-screen w-full object-cover object-right-bottom opacity-20' />
-        <div className='flex flex-col sm:flex-row'>
-            <Header/>
+        <div className='flex flex-col md:flex-row'>
+          <Header/>
           <Timeline/>
         </div>
       
       </div>
-      {(!isSubmitted) &&
       <section className='relative px-2 pt-16 md:pb-16 flex flex-col font-light gap-4 overflow-hidden'>
         <img src={flowerRing} alt="" className='absolute w-[800px] top-0 right-0 object-cover opacity-20' />
         <img src={flowerRing} alt="" className='absolute  w-[900px] bottom-0 left-0 object-cover opacity-20 rotate-90' />
@@ -46,8 +45,7 @@ function App() {
             setWillAttend={setWillAttend}
             />
         </div>
-      </section>
-      }
+      </section> 
       {isDialogShow && 
       <SubmitDialog 
         isSubmitted={isSubmitted}

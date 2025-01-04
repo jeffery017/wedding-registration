@@ -180,7 +180,7 @@ const Form = ({
         {/* Feast Amount Fields */}
         {showFeastQuestions && (
           <>
-            <p className='text-sm px-2 opacity-70 w-full'>為了評估禮物數量，我們需要分別知道大人、小孩的數量。<br/>幼童不算人頭，如果需要準備幼兒座椅，請填寫在下面。</p>
+            <p className='text-sm px-2 opacity-70 w-full'>為了評估禮物數量，我們需要分別知道大人、小孩的數量。<br/>如果需要準備幼兒座椅，請填寫在下面。</p>
             <div className='sub_question_group' id="feast_questions">
               <div className='label_group'>
                 <label htmlFor="feast_amount_adult">喜宴出席人數（大人）</label>
