@@ -44,7 +44,6 @@ function App() {
             setIsSubmitted={setIsSubmitted}
             setWillAttend={setWillAttend}
             />
-            <p className='text-black/50 text-center tracking-widest'>2025/6/28</p>
         </div>
       </section> 
       {isDialogShow && 
