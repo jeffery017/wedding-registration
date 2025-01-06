@@ -1,4 +1,4 @@
-import flowerRing from '../assets/wreath-3384413_1280.png'
+import flowerRing from '../assets/flower-ring.jpg'
 
 type Props = {
   isSubmitted: boolean

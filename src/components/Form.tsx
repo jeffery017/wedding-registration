@@ -17,8 +17,7 @@ const Form = ({
 }:Props) => {
   const [invitationType, setInvitationType] = useState(''); 
   const [showFeastQuestions, setShowFeastQuestions] = useState(false)
-  const [showCeremonyQuestions, setShowCeremonyQuestions] = useState(false)
-  const backgroundImage = "url('./assets/form-background.jpg')";
+  const [showCeremonyQuestions, setShowCeremonyQuestions] = useState(false) 
   const formRef = useRef<HTMLFormElement>(null);
 
   
@@ -63,10 +62,8 @@ const Form = ({
     setInvitationType(value);
   };
 
-  return (
-    <div className='w-full rounded-lg  shadow-lg overflow-hidden z-10 border-[1px] border-black/20 bg-white '>
-
-    <form className={`form  p-5 gap-4 flex flex-col items-center bg-[${backgroundImage}]`} 
+  return ( 
+    <form className={`form  p-5 gap-4 flex flex-col items-center w-full overflow-hidden z-10  bg-white/80 text-left  border-[1.5px] border-red-100 rounded-md shadow-md `} 
       ref={formRef}
       onSubmit={handleOnSubmit}> 
         {/* Name */}
@@ -218,8 +215,7 @@ const Form = ({
         <div className='w-64 m-auto'>
           <button type="submit" className="w-full bg-[hsl(12,75%,66%)] hover:bg-[hsl(12,85%,70%)] text-white py-2 rounded-md">提交表單</button>
         </div> 
-      </form>
-    </div>
+      </form> 
   );
 };
 
