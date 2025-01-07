@@ -1,4 +1,5 @@
 import Form from './Form' 
+import Timeline from './Timeline'
 
 type Props = {
     group:string
@@ -30,16 +31,18 @@ export default function FormSection({
               誠摯的邀請你們<br/>
               參與我們的這一天<br/>
               希望能與你們一起分享我們的喜悅<br/>
-              留下珍貴的記憶</p> 
+              留下珍貴的記憶<br/>
+              <br/>
+              林以奇 吳濟芸<br/>
+              敬邀
+              </p> 
       </div>
      
      
-      <TimeLine/>
-        {/* <img src={flowerRing} alt="" className='absolute w-[800px] top-0 right-0 object-cover opacity-20' />
-        <img src={flowerRing} alt="" className='absolute  w-[900px] bottom-0 left-0 object-cover opacity-20 rotate-90' /> */}
+      <Timeline/>
       <div>
         <h1 className='text-2xl  tracking-wider pb-2'>報名參加</h1>
-        <p className='m-auto max-w-md z-10'>如果您願意出席我們的婚禮，請填寫以下問卷，以方便我們評估人數。如果您不方便參與，還是歡迎您留下對我們的祝福。</p>
+        <p className='m-auto max-w-md z-10'>如果您願意參加我們的婚禮，請填寫以下問卷，以方便我們評估人數。如果您不方便出席，還是歡迎您留下對我們的祝福。</p>
       </div>
       <Form 
         group={group} 
@@ -50,34 +53,4 @@ export default function FormSection({
         />  
     </section> 
   )
-}
-
-const TimeLine = () => { return <div className='relative py-16 sm:py-32 gap-6 sm:gap-12 w-full min-h-[60vh] flex flex-col items-center justify-center  bg-white/80 border-[1.5px] border-red-100 rounded-md shadow-md '>
-  
-  
-  <div> 
-      <h1 className='text-2xl text-center tracking-wider pb-2'>婚禮時程</h1>
-      <p className='text-center'>2025.6.28 (六)</p> 
-  </div> 
-  <div className='text-2xl'>・</div>
-  <div>
-    <h2 className='text-2xl  pb-2'>證婚</h2>
-    <p>10:00~11:30</p>
-    <p>大安教會禮拜堂<br/>台北市和平東路3段1巷51號</p>
-    <a 
-      className='underline'
-      href="https://maps.app.goo.gl/4tYBiYdGP9t7ziA87" 
-      target='blank'>查看 Google Map</a>
-  </div>
-  <div className='text-2xl'>・</div>
-  <div>
-    <h2 className='text-2xl  pb-2'>婚宴</h2>
-    <p>12:30~15:00</p>
-    <p>彭園壹品宴<br/>台北市南京東路二段63號2樓</p>
-    <a 
-      className='underline'
-      href="https://maps.app.goo.gl/VS8uK1gWWFZMAP5E7" 
-      target='blank' >查看 Google Map</a>
-    {/* <p></p> */}
-  </div>
-</div> }
+} 

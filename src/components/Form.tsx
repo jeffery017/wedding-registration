@@ -139,7 +139,7 @@ const Form = ({
 
         {/* Ceremony Attendance */}
         <div className='h_group'>
-          <label>請問您是否參與證婚儀式？</label>
+          <label>請問您是否參與結婚典禮？</label>
           <div>
             <input type="radio" id="ceremony-yes" name="ceremony_attendance" value="yes" onChange={()=>setShowCeremonyQuestions(true)}/>
             <label htmlFor="ceremony-yes">是</label>
@@ -155,7 +155,7 @@ const Form = ({
         {showCeremonyQuestions && (
           <div className='sub_question_group'>
           <div className='label_group'>
-            <label htmlFor="ceremony_amount">證婚儀式出席人數</label>
+            <label htmlFor="ceremony_amount">結婚典禮出席人數</label>
             <input type="number" id="ceremony_amount" name="ceremony_amount"  defaultValue="1" min="1" />
           </div>
           </div>
