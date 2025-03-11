@@ -1,6 +1,6 @@
-import mainPicture from '../assets/main-picture-2.jpg'
+import shiningGIF from '../assets/blink-1.gif'
+import mainPicture from '../assets/main-picture-3.jpg'
 import title from '../assets/title.png'
-import shiningGIF from '../assets/blink-1.gif' 
 export default function Header() { 
  
   return (
