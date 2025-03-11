@@ -1,7 +1,7 @@
 
 export default function Timeline() {
   return (
-    <div className='relative py-16 sm:py-32 gap-6 sm:gap-12 w-full min-h-[60vh] flex flex-col items-center justify-center  bg-white/80 border-[1.5px] border-red-100 rounded-md shadow-md '>
+    <div className='relative py-16 sm:py-32 gap-6 sm:gap-12 w-full min-h-[60vh] flex flex-col items-center justify-center  bg-white/80 border-[1.5px] border-red-100 rounded-lg shadow-md '>
       <div> 
           <h1 className='text-2xl text-center tracking-wider pb-2'>婚禮時程</h1>
           <p className='text-center'>2025.6.28 (六)</p> 
