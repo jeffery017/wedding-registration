@@ -17,11 +17,11 @@ input[type="radio"] {
 .form input[type='number'],
 .form input[type='email'],
 .form textarea {
-  @apply grow border border-orange-900 border-opacity-30 rounded-md p-1.5 font-light bg-white bg-opacity-60 outline-none;
+  @apply grow border border-neutral-800 border-opacity-30 rounded-md p-1.5 font-light bg-opacity-60 outline-none;
 }
 
 .sub_question_group {
-  @apply w-full p-4 bg-orange-800 bg-opacity-15 rounded-md flex flex-col gap-2;
+  @apply w-full p-4 bg-neutral-800 bg-opacity-15 rounded-md flex flex-col gap-2;
 }
 
 .form textarea

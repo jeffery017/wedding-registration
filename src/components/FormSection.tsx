@@ -1,4 +1,4 @@
-import Form from './Form' 
+import Form from './Form'
 import Timeline from './Timeline'
 
 type Props = {

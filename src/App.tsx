@@ -1,11 +1,11 @@
  
 import { useEffect, useState } from 'react'
-import './App.css' 
+import './App.css'
 // components 
-import SubmitDialog from './components/SubmitDialog' 
 import Header from './components/Header'
+import SubmitDialog from './components/SubmitDialog'
 // image 
-import backgroundImage from './assets/flower-background.jpg' 
+import backgroundImage from './assets/blue_flower_background.jpg'
 import FormSection from './components/FormSection'
 
 
@@ -29,13 +29,21 @@ function App() {
   }, []);
   return (
     <> 
-    <div  className='relative container m-auto flex flex-col md:flex-row'> 
+    <div  className='relative  m-auto flex flex-col md:flex-row'> 
+      <div className='snap-start'></div>
+      <div className='absolute w-full h-full bg-neutral-100/50'></div>
+      {/* <div className='absolute w-full h-full bg-blue-100/10'></div> */}
       <Header/> 
-      <img id="bgImage" src={backgroundImage} alt="" className={`mt-[50vh] sm:mt-0 parallax absolute top-0 right-0 h-[135vh] min-h-[80em] w-full object-cover object-right-top opacity-30 -z-10 `}
+      <img id="bgImage" src={backgroundImage} alt="" className={`mt-[50vh] sm:mt-0 parallax absolute top-0 right-0 h-[135vh] min-h-[80em] w-full md:w-2/3 object-cover object-right-top opacity-70 -z-10 `}
         style={{
           transform: `translateY(${offsetY * 0.5}px)`, // Adjust speed with multiplier
         }} 
         />
+        {/* <div className='snap h-[600px] bg-red-400 m-2'></div>
+        <div className='snap-start h-[600px] bg-red-400 m-2'></div>
+        <div className='snap-start h-[600px] bg-red-400 m-2'></div>
+        <div className='snap-start h-[600px] bg-red-400 m-2'></div> */}
+        
         <FormSection 
           group={group} 
           relationship={relationship}

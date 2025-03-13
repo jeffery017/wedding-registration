@@ -4,7 +4,7 @@ import title from '../assets/title.png'
 export default function Header() { 
  
   return (
-    <div className="relative md:sticky md:top-0 w-full lg:w-1/2  h-screen overflow-hidden " >
+    <div className="relative md:sticky md:top-0 w-full lg:w-1/2  h-screen overflow-hidden" >
       <img 
         src={mainPicture} 
         alt="main" 

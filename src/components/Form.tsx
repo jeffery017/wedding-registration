@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
- 
+import paperTexture from '../assets/paper-texture.jpg';
 type Props = {
   group:string
   relationship: string
@@ -63,7 +63,8 @@ const Form = ({
   };
 
   return ( 
-    <form className={`form  p-5 gap-4 flex flex-col items-center w-full overflow-hidden z-10  bg-white/80 text-left  border-[1.5px] border-red-100 rounded-lg shadow-md `} 
+    <form className={`form  p-5 gap-4 flex flex-col items-center w-full overflow-hidden z-10  text-left bg-cover border-[1.5px] border-white rounded-lg shadow-lg `} 
+    style={{backgroundImage: `url(${paperTexture})`}}
       ref={formRef}
       onSubmit={handleOnSubmit}> 
         {/* Name */}
@@ -217,7 +218,7 @@ const Form = ({
 
         {/* Submit Button */}
         <div className='w-64 m-auto'>
-          <button type="submit" className="w-full bg-[hsl(12,75%,66%)] hover:bg-[hsl(12,85%,70%)] text-white py-2 rounded-md">提交表單</button>
+          <button type="submit" className="w-full bg-[hsl(223,47%,68%)] hover:bg-[hsl(223,39%,70%)] text-white py-2 rounded-full">提交表單</button>
         </div> 
       </form> 
   );
