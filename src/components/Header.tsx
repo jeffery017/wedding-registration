@@ -10,7 +10,7 @@ export default function Header() {
         alt="main" 
         className='absolute top-0 w-full h-full object-cover' 
       />
-      <img src={shiningGIF} alt="shining" className='absolute top-0 w-full h-full mix-blend-screen object-cover' />
+      <img src={shiningGIF} alt="shining" className='absolute top-0 w-full h-full mix-blend-screen object-cover translate-x-1' />
       <img src={title} alt="title" className='absolute mx-[25%] top-32 w-1/2 object-contain ' />      
     </div>
   )
