@@ -11,7 +11,7 @@ export default function Timeline() {
       <hr className='border-neutral-300 w-2/3 my-2'/>
       <div>
         <h2 className='text-xl  pb-2'>結婚典禮</h2>
-        <p className="pb-2">9:30~11:00</p>
+        <p className="pb-2">9:45~11:00</p>
         <p>大安教會禮拜堂<br/>台北市和平東路3段1巷51號</p>
         <a 
           className='underline'
